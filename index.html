@@ -4,9 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estiloBBGT.css">
+
 </head>
 <body>
+    <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenedor {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #0a3d62;
+      margin: 0;
+    }
+
+    h1 span {
+      color: #3c6382;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      color: #0a3d62;
+    }
+
+    .sesion {
+      background: #0a3d62;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 15px;
+      margin-left: 20px;
+    }
+
+    .sesion:hover {
+      background: #3c6382;
+    }
+
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+   
+    @media (max-width: 768px) {
+      .contenedor {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .sesion {
+        display: none;
+      }
+        .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+    }
+  nav {
+  flex: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.nav-links li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #0a3d62;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+
+.nav-links li a:hover {
+  color: #0a3d62;
+  transform: scale(1.05);
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+    </style>
 </head>
 <body>
 
